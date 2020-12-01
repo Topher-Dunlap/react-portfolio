@@ -1,11 +1,13 @@
 # Created using the following:
 
+* Javascript
 * React
   * Error Boundaries
   * useState
+  * React Router
   * React-Icons
   * React-Relax
-* Javascript
+  * JSX
 
 Design:
 * CSS
