@@ -2,9 +2,7 @@ import React from 'react';
 import Parallax from 'react-rellax';
 import SkillCardGrid from "./SkillCardGrid";
 
-
 export default function Skills() {
-
     return (
         <div style={backgroundColor}>
             <Parallax speed={1.25}>

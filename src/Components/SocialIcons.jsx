@@ -5,6 +5,14 @@ import {SiGithub, SiLinkedin} from "react-icons/si";
 
 export default function SocialIcons() {
 
+    //hover mouse colors for buttons
+    function onChangeColor(e) {
+        e.target.style.color = 'black';
+    }
+    function offChangeColor(e) {
+        e.target.buttonStyle = 'white';
+    }
+
     return (
         <ButtonGroup
             variant="text"
@@ -17,6 +25,8 @@ export default function SocialIcons() {
                 aria-label="gitHub"
                 fontSize="20px"
                 icon={<SiGithub/>}
+                onMouseOver={onChangeColor}
+                onMouseOut={offChangeColor}
                 onClick={(e) => (window.open('https://github.com/Topher-Dunlap'))}
             />
             <IconButton
@@ -25,6 +35,8 @@ export default function SocialIcons() {
                 colorScheme="red"
                 aria-label="gitHub"
                 fontSize="20px"
+                onMouseOver={onChangeColor}
+                onMouseLeave={offChangeColor}
                 icon={<SiLinkedin/>}
                 onClick={(e) => (window.open('https://www.linkedin.com/in/developerdunlap/'))}
             />

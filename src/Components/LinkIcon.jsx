@@ -3,8 +3,19 @@ import {IconButton} from "@chakra-ui/react";
 
 
 export default function LinkIcon(props) {
+
+    //hover mouse colors for buttons
+    function onChangeColor(e) {
+        e.target.style.color = 'black';
+    }
+    function offChangeColor(e) {
+        e.target.buttonStyle = 'white';
+    }
+
+    //prop variables
     const CardIcon = props.icon;
     const link = props.link;
+
     return (
         <div style={centerButtons}>
             <IconButton
@@ -14,6 +25,8 @@ export default function LinkIcon(props) {
                 aria-label="gitHub"
                 fontSize="20px"
                 icon={<CardIcon/>}
+                onMouseOver={onChangeColor}
+                onMouseOut={offChangeColor}
                 onClick={(e) => (window.open(link))}
             />
         </div>

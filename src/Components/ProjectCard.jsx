@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import ThemeContext from "./ThemeContext";
 import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,6 +10,8 @@ import LinkIcon from "./LinkIcon";
 
 export default function ProjectCard(props) {
 
+    const context = useContext(ThemeContext);
+    const theme = context.theme;
     const title = props.title;
     const content = props.content;
     const img = props.img;
@@ -17,8 +20,7 @@ export default function ProjectCard(props) {
     const link = props.link;
 
     return (
-
-        <Grid style={bodyStyle}>
+        <Grid style={theme}>
             <Paper elevation={3} style={cardBorderColor}>
                 <Card>
                     <CardContent style={cardBodyColor}>
@@ -33,7 +35,6 @@ export default function ProjectCard(props) {
                             <List spacing={3} component="span">
                                 {skills.map((listItem, idx) =>
                                     <ListItem key={idx} style={listItemStyle}>
-                                        {/*<ListIcon as={icons[idx]} w={7} h={7} color="#B3A577"/>*/}
                                         {listItem}
                                     </ListItem>
                                 )}
@@ -47,16 +48,16 @@ export default function ProjectCard(props) {
     )
 }
 
-const bodyStyle = {
-    backgroundColor: "#181818",
-    color: "#fefefe",
-    WebkitBoxAlign: "center",
-    WebkitBoxPack: "center",
-    display: "-webkit-box",
-    fontSize: "3.5rem",
-    fontFamily: 'Ubuntu, sans-serif',
-    position: "relative",
-}
+// const bodyStyle = {
+//     backgroundColor: "#181818",
+//     color: "#fefefe",
+//     WebkitBoxAlign: "center",
+//     WebkitBoxPack: "center",
+//     display: "-webkit-box",
+//     fontSize: "3.5rem",
+//     fontFamily: 'Ubuntu, sans-serif',
+//     position: "relative",
+// }
 
 const marginTopBottom = {
     margin: "2rem 0",
@@ -65,11 +66,6 @@ const marginTopBottom = {
 const marginBottom = {
     marginBottom: "2rem",
 }
-
-// const marginTop = {
-//     marginTop: "2rem",
-//     color: "white",
-// }
 
 const cardListColor = {
     color: "#B3A577",
@@ -94,7 +90,6 @@ const cardBodyColor = {
 }
 
 const cardBorderColor = {
-    // backgroundColor: "#fefefe",
     backgroundColor: "white",
     margin: "1rem",
     padding: ".75rem",

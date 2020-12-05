@@ -80,10 +80,6 @@ const navContainer = {
     marginTop: "2rem",
 }
 
-// const headerLightPurple = {
-//     color: "#99b0e0",
-// }
-
 const navItem = {
     fontSize: "large",
     marginLeft: "10px",
