@@ -1,16 +1,23 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {IconButton} from "@chakra-ui/react";
+import useHover from "@react-hook/hover";
 
 
 export default function LinkIcon(props) {
 
+    const iconButton = useRef(null);
+    const iconHovering = useHover(iconButton, {enterDelay: 100, leaveDelay: 100});
+
     //hover mouse colors for buttons
-    function onChangeColor(e) {
-        e.target.style.color = 'black';
-    }
-    function offChangeColor(e) {
-        e.target.buttonStyle = 'white';
-    }
+    useEffect(() => {
+        if(iconHovering) {
+            iconButton.current.style.color = "black";
+        }
+        else {
+            iconButton.current.style.color = "white";
+        }
+    }, [iconHovering])
+
 
     //prop variables
     const CardIcon = props.icon;
@@ -25,8 +32,7 @@ export default function LinkIcon(props) {
                 aria-label="gitHub"
                 fontSize="20px"
                 icon={<CardIcon/>}
-                onMouseOver={onChangeColor}
-                onMouseOut={offChangeColor}
+                ref={iconButton}
                 onClick={(e) => (window.open(link))}
             />
         </div>
