@@ -3,7 +3,7 @@
 * Javascript
 * React
   * Error Boundaries
-  * useState
+  * useEffect
   * React Router
   * React-Icons
   * React-Relax
