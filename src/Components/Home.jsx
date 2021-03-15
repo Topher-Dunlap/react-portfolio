@@ -8,14 +8,16 @@ export default function Home() {
 
     return (
         <div>
-            <div style={posRel}>
+            <div style={homeDiv}>
                 <section style={h1Home}>
                     <HomeTextEffect/>
                 </section>
-                <h2 style={h2Home}>I create art, Websites and Web Apps</h2>
-                <Parallax speed={0}>
-                    <DeskAnimation/>
-                </Parallax>
+                <section style={deskAnimation}>
+                    <h2 style={h2Home}>I create art, Websites and Web Apps</h2>
+                    <Parallax speed={0}>
+                        <DeskAnimation/>
+                    </Parallax>
+                </section>
             </div>
             <SocialIcons/>
         </div>
@@ -40,10 +42,13 @@ const h2Home = {
     zIndex: "9",
     left: "100px",
     right: "100px",
-    position: "absolute",
     display: "block",
 }
 
-const posRel = {
+const deskAnimation = {
+    display: "block",
+}
+
+const homeDiv = {
     position: "relative",
 }

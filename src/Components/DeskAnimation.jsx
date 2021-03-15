@@ -8,8 +8,7 @@ const DeskAnimation = () => {
 export default DeskAnimation;
 
 const sizing = {
-    // margin: "5px 22rem 5px auto",
-    width: "375px",
+    width: "100%",
     height: "375px",
     position: "relative",
     marginLeft: "auto",

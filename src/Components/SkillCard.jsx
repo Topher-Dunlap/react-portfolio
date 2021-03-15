@@ -60,7 +60,6 @@ const cardBodyColor = {
 }
 
 const cardBorderColor = {
-    // backgroundColor: "#fefefe",
     backgroundColor: "white",
     margin: "1rem",
 }

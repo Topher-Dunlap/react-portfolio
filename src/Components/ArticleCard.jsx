@@ -51,11 +51,6 @@ const marginBottom = {
     marginBottom: "1rem",
 }
 
-// const marginTop = {
-//     marginTop: "2rem",
-//     color: "white",
-// }
-//
 
 const listItemStyle = {
     padding: "8px 16px",
@@ -80,8 +75,6 @@ const cardBodyColor = {
 }
 
 const cardBorderColor = {
-    // backgroundColor: "#fefefe",
     backgroundColor: "white",
-    margin: "1rem",
     padding: ".75rem",
 }

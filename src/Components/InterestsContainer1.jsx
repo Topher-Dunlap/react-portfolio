@@ -47,7 +47,7 @@ const h2Interest = {
     fontFamily: 'Ubuntu, sans-serif',
     color: "white",
     fontSize: "2rem",
-    padding: "2rem 5rem",
+    padding: "2rem 2rem",
     marginTop: "6rem",
 }
 

@@ -11,8 +11,7 @@ export default function NavList(props) {
     return (
         <div style={navContainer}>
             <ul>
-                <ButtonGroup aria-label="text primary button group">
-                    <Button style={navItem}>
+                <ButtonGroup aria-label="text primary button group" style={buttonGroupStyle}>                    <Button style={navItem}>
                         <NavLink
                             exact to="/"
                             activeClassName="isActive"
@@ -60,7 +59,6 @@ export default function NavList(props) {
                         <NavLink
                             to='/contact'
                             activeClassName="isActive"
-                            style={navItem}
                             activeStyle={{
                                 fontWeight: "bold",
                                 color: "#B3A577"
@@ -80,14 +78,13 @@ const navContainer = {
     marginTop: "2rem",
 }
 
-// const headerLightPurple = {
-//     color: "#99b0e0",
-// }
+const buttonGroupStyle = {
+    display: "inline",
+}
 
 const navItem = {
     fontSize: "large",
-    marginLeft: "10px",
-    marginRight: "10px",
+    margin: "10px 10px",
     color: "white",
     borderColor: "white",
 }
