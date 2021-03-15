@@ -4,8 +4,10 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import {FiPlay} from "react-icons/fi";
 import ProjectCardSection from "./ProjectCardSection";
 import ProjectSocialIcons from "./ProjectSocialIcons";
+import LinkIcon from "./LinkIcon";
 
 export default function ProjectCard(props) {
 
@@ -16,6 +18,7 @@ export default function ProjectCard(props) {
     const backSkills = props.backSkills;
     const frontEndLink = props.frontEndLink;
     const backEndLink = props.backEndLink;
+    const liveAppLink = props.liveAppLink;
 
     return (
         <Grid style={bodyStyle}>
@@ -29,6 +32,14 @@ export default function ProjectCard(props) {
                         <Typography style={marginTopBottom}>
                             {content}
                         </Typography>
+                        <hr style={hrStyle}/>
+                        <Typography variant="h5" component="h2" style={marginTop}>
+                            Live Link
+                        </Typography>
+                        <LinkIcon
+                            icon={FiPlay}
+                            link={liveAppLink}
+                        />
                         <ProjectCardSection
                             sectionLabel={"Front-End"}
                             sectionSkills={frontSkills}
@@ -74,18 +85,6 @@ const marginTop = {
     marginTop: "2rem",
 }
 
-const cardListColor = {
-    color: "#B3A577",
-    marginTop: "2rem",
-}
-
-const listItemStyle = {
-    padding: "8px 16px",
-    borderBottom: "1px solid #ddd",
-    listStyleType: "none",
-    textSize: "medium",
-}
-
 const cardImg = {
     width: "85%",
     margin: "2rem auto",
@@ -97,8 +96,13 @@ const cardBodyColor = {
 }
 
 const cardBorderColor = {
-    // backgroundColor: "#fefefe",
     backgroundColor: "white",
     margin: "1rem",
     padding: ".75rem",
+}
+
+const hrStyle = {
+    textAlign: "center",
+    margin: "auto",
+    width: "20px",
 }

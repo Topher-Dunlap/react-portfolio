@@ -19,6 +19,7 @@ export default function ProjectCardGrid() {
             img: woLanding,
             frontEndLink: "https://github.com/Topher-Dunlap/worst-of-client",
             BackEndLink: "https://github.com/Topher-Dunlap/worst-of-server",
+            liveAppLink: "https://worst-of-client-topher-dunlap.vercel.app/",
         }
     );
 
@@ -30,6 +31,7 @@ export default function ProjectCardGrid() {
             img: factCheck,
             frontEndLink: "https://github.com/Topher-Dunlap/fact_check_app",
             backEndLink: "",
+            liveAppLink: "https://topher-dunlap.github.io/fact_check_app/",
         }
     );
 
@@ -43,6 +45,7 @@ export default function ProjectCardGrid() {
             img: traveler,
             frontEndLink: "https://github.com/Topher-Dunlap/thriftiest-traveler-client",
             backEndLink: "https://github.com/Topher-Dunlap/thriftiest-traveler-server",
+            liveAppLink: "https://thriftiest-traveler-client.vercel.app/",
         }
     );
 
@@ -57,6 +60,7 @@ export default function ProjectCardGrid() {
                         backSkills={travelerProState.backSkills}
                         frontEndLink={travelerProState.frontEndLink}
                         backEndLink={travelerProState.backEndLink}
+                        liveAppLink={travelerProState.liveAppLink}
                         img={travelerProState.img}/>
                     <ProjectCard
                         title={worstProState.title}
@@ -65,6 +69,7 @@ export default function ProjectCardGrid() {
                         backSkills={worstProState.backSkills}
                         frontEndLink={worstProState.frontEndLink}
                         backEndLink={worstProState.backEndLink}
+                        liveAppLink={worstProState.liveAppLink}
                         img={worstProState.img}/>
                     <ProjectCard
                         title={factProState.title}
@@ -73,6 +78,7 @@ export default function ProjectCardGrid() {
                         backSkills={factProState.backSkills}
                         frontEndLink={factProState.frontEndLink}
                         backEndLink={factProState.backEndLink}
+                        liveAppLink={factProState.liveAppLink}
                         img={factProState.img}/>
                 </SimpleGrid>
             </Parallax>
