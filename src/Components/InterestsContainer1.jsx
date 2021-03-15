@@ -22,16 +22,17 @@ export default function InterestsContainer1() {
                     I use a variety of tools, languages and frameworks like <span
                     style={{color: "#B3A577"}}>React </span>
                     and <span style={{color: "#B3A577"}}>Node.js</span>.
-                    Computers and Programming aren't
+                    While computers and programming are a passion of mine they aren't
                     my only interests! I also love playing <span style={{color: "#B3A577"}}>jazz music</span>. I'm a
                     saxophone player and
                     I also enjoy <span style={{color: "#B3A577"}}>teaching</span> and <span
                     style={{color: "#B3A577"}}>dancing </span>
                     Brazilian Zouk. There are so
-                    many similarities and crossovers between music, dance and coding! With any
-                    project I will bring a unique set of problems solving skills, <span
-                    style={{color: "#B3A577"}}>creativity </span>
-                    and empathy into creating your product.
+                    many similarities and crossovers between music, dance and
+                    <span style={{color: "#B3A577"}}> coding</span>! I'm excited to build projects with other <span
+                    style={{color: "#B3A577"}}>developers</span> and <span
+                    style={{color: "#B3A577"}}>teams</span> to bring new technology and ideas to <span
+                    style={{color: "#B3A577"}}>life</span>.
                 </h2>
             </Parallax>
         </section>

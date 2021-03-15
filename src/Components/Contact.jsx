@@ -6,7 +6,16 @@ export default function Contact() {
     return (
         <section style={bodyStyle}>
             <h1 style={h1Contact}>Contact</h1>
-            <h2 style={h2Margin}>Feel free to drop me a line at <span style={{color: "#B3A577"}}>developerdunlap@gmail.com</span>.</h2>
+            <h2 style={h2Margin}>
+                Feel free to drop me a line at
+                <br/>
+                <a href={"mailto:developerdunlap@gmail.com"} target="_blank">
+                    <span style={{color: "#B3A577"}}>
+                        developerdunlap@gmail.com
+                    </span>
+                        .
+                </a>
+            </h2>
             <SocialIcons/>
         </section>
     )
