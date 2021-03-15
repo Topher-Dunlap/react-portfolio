@@ -19,7 +19,7 @@ export default function ArticleGrid() {
     const [articleMentorState, setArticleMentorstate] = useState({
             title: "Bootcamp Mentors",
             img: mentorPic,
-            content: "My experience with mentors you'll find in coding bootcamps",
+            content: "My experience with mentors you'll find in coding bootcamps.",
             icon: AiOutlineMedium,
             article: "https://developerdunlap.medium.com/types-of-mentors-youll-encounter-in-a-coding-bootcamp-a8bb28a0dfd5?source=friends_link&sk=6671c5530daf9bc8eee837fac29930ff"
         }

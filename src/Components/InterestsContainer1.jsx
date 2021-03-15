@@ -18,7 +18,7 @@ export default function InterestsContainer1() {
                 <h2 style={h2Interest}>
                     Hi, I'm <span style={{color: "#B3A577"}}>Topher</span>. Nice to meet you.
                     I currently live in <span style={{color: "#B3A577"}}>Minneapolis</span>,
-                    MN and work as a <span style={{color: "#B3A577"}}>full stack</span> web developer.
+                    MN and work as a <span style={{color: "#B3A577"}}>full-stack</span> web developer.
                     I use a variety of tools, languages and frameworks like <span
                     style={{color: "#B3A577"}}>React </span>
                     and <span style={{color: "#B3A577"}}>Node.js</span>.
