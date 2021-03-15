@@ -22,7 +22,7 @@ export default function InterestsContainer1() {
                     I use a variety of tools, languages and frameworks like <span
                     style={{color: "#B3A577"}}>React </span>
                     and <span style={{color: "#B3A577"}}>Node.js</span>.
-                    While computers and programming are a passion of mine they aren't
+                    While computers and programming are passions of mine they aren't
                     my only interests! I also love playing <span style={{color: "#B3A577"}}>jazz music</span>. I'm a
                     saxophone player and
                     I also enjoy <span style={{color: "#B3A577"}}>teaching</span> and <span

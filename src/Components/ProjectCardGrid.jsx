@@ -11,7 +11,7 @@ export default function ProjectCardGrid() {
 
     const [worstProState, setWorstProstate] = useState({
             title: "Worst Of",
-            content: "This app allows the user to search for the worst Restaurants, bars or coffee establishments in a given area.",
+            content: "This app allows the user to search for the worst Restaurants, bars or coffee establishments in a given area. It's made for users that want an interesting and exciting flip to the dining experience. Apps like yelp won't filter the worst rated places so I made an app that would!",
             frontSkills: ["React, JSX, JavaScript, jQuery, Jest, Axios, Service Objects, Routing, Error Boundaries, JWT, Hooks, CSS"],
             backSkills: ["Node.js, Express, Express Router, Postgres, SQL, Knex, Postgrator, Jest, JWT, Service Objects, Morgan"],
             frontEnd: "Front-End",
@@ -25,7 +25,7 @@ export default function ProjectCardGrid() {
 
     const [factProState, setFactProstate] = useState({
             title: "FactCheck",
-            content: ["I created this app which integrates the Google Fact Check API and also includes media bias and factual reporting record for sources that fact check claims."],
+            content: ["This app checks the media bias and factual reporting record for sources that fact check claims. I created this app to help combat misinformation on the internet. It integrates the Google Fact Check API and also includes media bias and factual reporting information on sites that fact check claims. If you're looking for the most accurate sources of news this app is for you!"],
             frontSkills: ["RestAPI, JQuery, CSS, HTML, Javascript"],
             backSkills: ['No Back-End'],
             img: factCheck,
@@ -37,7 +37,7 @@ export default function ProjectCardGrid() {
 
     const [travelerProState, setTravelerProState] = useState({
             title: "Thriftiest Traveler",
-            content: ["Thriftiest Traveler shows you the best deals on travel in areas that have recently experienced a disaster or terrorist related event."],
+            content: ["Thriftiest Traveler shows you the best deals on travel in areas that have recently experienced disaster or terrorist related events. I created the app after seeing a TikTok video of a traveler utilizing this method for booking trips. If you're looking to save some money on seeing some amazing places this may be the app for you!"],
             frontSkills: ["React, JSX, JavaScript, jQuery, Jest, Axios, Service Objects, Routing, Error Boundaries, JWT, Hooks, CSS"],
             backSkills: ["Node.js, Express, Express Router, Postgres, SQL, Knex, Postgrator, Jest, JWT, Service Objects, Morgan"],
             frontEnd: "Front-End",

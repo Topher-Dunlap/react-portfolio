@@ -13,7 +13,7 @@ export default function Home() {
                     <HomeTextEffect/>
                 </section>
                 <section style={deskAnimation}>
-                    <h2 style={h2Home}>I create art, Websites and Web Apps</h2>
+                    <h2 style={h2Home}>I create Art, Websites and Web Apps</h2>
                     <Parallax speed={0}>
                         <DeskAnimation/>
                     </Parallax>
