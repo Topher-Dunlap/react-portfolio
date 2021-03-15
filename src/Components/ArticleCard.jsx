@@ -53,7 +53,6 @@ const marginBottom = {
 
 
 const listItemStyle = {
-    padding: "8px 16px",
     borderBottom: "1px solid #ddd",
     listStyleType: "none",
     textSize: "medium",
@@ -78,3 +77,4 @@ const cardBorderColor = {
     backgroundColor: "white",
     padding: ".75rem",
 }
+
